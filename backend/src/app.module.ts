@@ -9,6 +9,7 @@ import { AppService } from './app.service';
 import { OnboardingModule } from './modules/onboarding/onboarding.module';
 import { KycModule } from './modules/kyc/kyc.module';
 import { ScoreModule } from './modules/score/score.module';
+import { MerchantModule } from './modules/merchant/merchant.module';
 
 @Module({
   imports: [
@@ -26,8 +27,9 @@ import { ScoreModule } from './modules/score/score.module';
     OnboardingModule,
     KycModule,
     ScoreModule,
+    MerchantModule,
   ],
-  controllers: [AppController],   // 👈 registra el controller raíz
-  providers: [AppService],        // 👈 registra el service
+  controllers: [AppController],   // registra el controller raíz
+  providers: [AppService],        // registra el service
 })
 export class AppModule {}
