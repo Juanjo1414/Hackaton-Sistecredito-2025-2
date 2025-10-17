@@ -1,7 +1,7 @@
 import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { MerchantService } from './merchant.service';
 
-@Controller('merchant') // <--- base path
+@Controller('merchant') 
 export class MerchantController {
   constructor(private svc: MerchantService) {}
 
